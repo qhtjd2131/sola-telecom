@@ -66,7 +66,7 @@ function App() {
               alt="네이버블로그"
               style={{
                 maxWidth: 560,
-                margin: "10 auto",
+                margin: "0 auto",
                 padding: 20,
                 boxSizing: "border-box",
               }}
