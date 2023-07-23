@@ -15,7 +15,7 @@ function App() {
         </SubText> */}
       </TextWrapper>
 
-      <Wrapper>
+      {/* <Wrapper>
         <Card
           hoverable
           bordered
@@ -54,7 +54,28 @@ function App() {
             </FlexCol>
           </FlexRow>
         </Card>
-      </Wrapper>
+      </Wrapper> */}
+      <div style={{ width: "100%", height: "90vh" }}>
+        <iframe
+          src="https://www.daangn.com/kr/business-profiles/솔라텔레콤-f0b042c179534cd28f9f4b0d5e679e5e"
+          width={"100%"}
+          height={"100%"}
+        />
+      </div>
+      <div style={{ width: "100%", height: "90vh" }}>
+        <iframe
+          src="https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&tqi=i70evlp0i0GsscdRdJKssssssYw-025315&query=cu%E3%85%85%E3%85%8A%E3%84%B1%E3%85%82%E3%84%B9%E3%85%88"
+          width={"100%"}
+          height={"100%"}
+        />
+      </div>
+      <div style={{ width: "100%", height: "90vh" }}>
+        <iframe
+          src="https://map.naver.com/v5/entry/place/1008384085?placePath=%2Fhome&c=17.41,0,0,0,dh"
+          width={"100%"}
+          height={"100%"}
+        />
+      </div>
 
       <Wrapper>
         <Card
@@ -90,7 +111,7 @@ function App() {
         </Card>
       </Wrapper>
 
-      <Wrapper>
+      {/* <Wrapper>
         <Card
           hoverable
           bordered
@@ -124,7 +145,7 @@ function App() {
             description={"서울 송파구 백제고분로33길 9 1층 휴대폰도매#"}
           />
         </Card>
-      </Wrapper>
+      </Wrapper> */}
     </Layout>
   );
 }
