@@ -196,10 +196,12 @@ const contentStyle = {
 };
 const Layout = styled.div`
   width: 100%;
+  max-width: 600px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 `;
 
 const Wrapper = styled.div`
