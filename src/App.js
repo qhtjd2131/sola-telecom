@@ -188,7 +188,7 @@ function App() {
         <img
           src="map_cover.png"
           alt="map cover image"
-          style={{ width: "100%", cursor: "pointer" }}
+          style={{ width: "100%", cursor: "pointer", marginBottom: 40 }}
           onClick={() => {
             window.open(
               "https://map.naver.com/v5/entry/place/1008384085?placePath=%2Fhome&c=16.1,0,0,0,dh"
@@ -213,6 +213,7 @@ const Layout = styled.div`
   width: 100%;
   max-width: 600px;
   height: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -227,12 +228,12 @@ const Wrapper = styled.div`
 
 const Background = styled.div`
   position: relative;
-  background-image: url("/sola_telecom.jpeg");
+  background-image: url("/main.jpeg");
   width: 100%;
   height: 100vh;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-
+  background-repeat: no-repeat;
   filter: opacity(0.3);
   margin-bottom: 32px;
 `;
