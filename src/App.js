@@ -26,7 +26,14 @@ function App() {
       <TextWrapper>
         <MainText>{`방문해 주셔서 감사합니다`}</MainText>
       </TextWrapper>
-      <div style={{ position: "relative", width: "100%" }}>
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          height: "100%",
+          minHeight: "100%",
+        }}
+      >
         <Background />
         <BottomTextWrapper>
           <Paragraph style={{ margin: 0, fontSize: 12 }}>
@@ -209,11 +216,19 @@ const contentStyle = {
   textAlign: "center",
   background: "#364d79",
 };
+
+const Cover = styled.div`
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+`;
 const Layout = styled.div`
   width: 100%;
   max-width: 600px;
   height: 100%;
   max-height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -222,15 +237,15 @@ const Layout = styled.div`
 
 const Wrapper = styled.div`
   width: 100%;
+  /* height: 100%; */
   padding: 10px 10px;
   box-sizing: border-box;
 `;
 
 const Background = styled.div`
-  position: relative;
   background-image: url("/main.jpeg");
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
